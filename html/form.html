@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<head>
+<title>Form</title>
+<style>
+  /* TODO: padding, focus, responsive */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  border-radius: .5em;
+  padding: 2em 1em;
+  background-color: skyblue;
+  box-shadow: 2px 2px 10px 4px rgb(0, 0, 0, .15);
+  min-width: 30em;
+}
+
+.input-group {
+  display: block;
+  margin-bottom: .8em;
+  width: 100%;
+}
+.input-group > label {
+  margin-right: .5em;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: .2em;
+}
+
+.input {
+  padding: .5em;
+  width: 100%;
+}
+
+textarea.input {
+  height: 6em;
+}
+
+.btn {
+  padding: .5em 1em;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .form {
+  min-width: 90%;
+  }
+}
+
+.input-phone {
+  display: flex;
+}
+.input-phone .prefix-input {
+  width: 16.666667%;
+  margin-right: .6em;
+}
+
+</style>
+
+</head>
+<body>
+  <div class="container">
+    <form class="form" method="POST">
+      <label class="input-group">
+        <span class="input-label">Firstname: </span>
+        <input type="text" class="input" placeholder="first name" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Middlename: </span>
+        <input type="text" class="input" placeholder="middle name" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Lastname: </span>
+        <input type="text" class="input" placeholder="last name" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Course: </span>
+        <select type="text" class="input" placeholder="nama">
+          <option value="Course">Course</option>
+          <option value="BCA">BCA</option>
+          <option value="BBA">BBA</option>
+          <option value="B.Tech">B.Tech</option>
+          <option value="MBA">MBA</option>
+          <option value="MCA">MCA</option>
+          <option value="M.Tech">M.Tech</option>
+        </select>
+      </label>
+      
+      <div class="input-group">
+        <span class="input-label">Gender: </span>
+          <input type="radio" name="gender" value="male" id="radio-male"/>
+          <label for="radio-male">
+            Male
+          </label>
+          <input type="radio" name="gender" value="female" id="radio-female"/>
+          <label for="radio-female">
+            Female
+          </label>
+          <input type="radio" name="gender" value="other" id="radio-other"/>
+          <label for="radio-other">
+            Other
+          </label>
+      </div>
+
+      <label class="input-group">
+        <span class="input-label">Phone: </span>
+        <div class="input-phone">
+          <input type="text" class="input prefix-input" placeholder="prefix" value="+91" />
+          <input type="number" class="input" placeholder="phone" />
+        </div>
+      </label>
+      
+      <label class="input-group">
+        <span class="input-label">Address: </span>
+        <textarea class="input"></textarea>
+      </label>
+      
+      <label class="input-group">
+        <span class="input-label">Email: </span>
+        <input type="email" class="input" placeholder="email" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Password: </span>
+        <input type="password" class="input" placeholder="password" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Re-type password: </span>
+        <input type="password" class="input" placeholder="repeat password" />
+      </label>
+
+      <button type="button" class="btn" id="btn-sapa" >Submit</button>
+    </form>
+  </div>
+</body>
+</html>
