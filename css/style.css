@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 2em 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  border-radius: 0.5em;
+  padding: 2em 1.5em 2em;
+  position: relative;
+  z-index: 10;
+  background-color: white;
+  box-shadow: 2px 2px 10px 4px rgb(0, 0, 0, 0.15);
+  min-width: 35em;
+  overflow: hidden;
+}
+
+.form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1em;
+  width: 100%;
+  background-color: cadetblue;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.479);
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+}
+
+.title-icon {
+  width: 5em;
+  margin: auto;
+  color: cadetblue;
+}
+
+.input-group {
+  display: block;
+  margin-bottom: 0.8em;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.719);
+}
+
+.input-group > label {
+  margin-right: 0.5em;
+}
+
+.input-group:focus-within {
+  color: rgb(0, 0, 0);
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 0.2em;
+}
+
+.input {
+  padding: 0.8em;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.3em;
+  box-shadow: inset 0px 0px 0px 1.2px rgba(0, 0, 0, 0.137);
+  transition: box-shadow 0.3s;
+}
+
+.input:focus {
+  box-shadow: inset 0px 0px 0px 2px rgba(0, 0, 0, 0.664);
+}
+
+textarea.input {
+  height: 6em;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0.8em 1em;
+  font-weight: normal;
+  cursor: pointer;
+  background-color: rgb(0, 214, 161);
+  transition: 0.4s;
+  color: white;
+  margin-top: 2em;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: rgb(0, 196, 147);
+}
+
+@media only screen and (max-width: 768px) {
+  .form {
+    min-width: 90%;
+  }
+}
+
+.input-phone {
+  display: flex;
+}
+.input-phone .prefix-input {
+  width: 16.666667%;
+  margin-right: 0.6em;
+}
