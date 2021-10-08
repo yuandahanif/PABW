@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+<title>Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+
+</head>
+<body>
+  <div class="container">
+    <form class="form" method="POST" id="registeration_form">
+      <div class="title">
+        <div class="title-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M12 14l9-5-9-5-9 5 9 5z" />
+            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222" />
+          </svg>
+        </div>
+        <h1>Student Registration Form</h1>
+      </div>
+
+      <label class="input-group">
+        <span class="input-label">Firstname: </span>
+        <input type="text" name="firstname" class="input" placeholder="first name" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Middlename: </span>
+        <input type="text" name="middlename" class="input" placeholder="middle name" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Lastname: </span>
+        <input type="text" name="lastname" class="input" placeholder="last name" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Course: </span>
+        <select type="text" class="input" placeholder="nama">
+          <option value="Course">Course</option>
+          <option value="BCA">BCA</option>
+          <option value="BBA">BBA</option>
+          <option value="B.Tech">B.Tech</option>
+          <option value="MBA">MBA</option>
+          <option value="MCA">MCA</option>
+          <option value="M.Tech">M.Tech</option>
+        </select>
+      </label>
+      
+      <div class="input-group">
+        <span class="input-label">Gender: </span>
+          <input type="radio" name="gender" value="male" id="radio-male"/>
+          <label for="radio-male">
+            Male
+          </label>
+          <input type="radio" name="gender" value="female" id="radio-female"/>
+          <label for="radio-female">
+            Female
+          </label>
+          <input type="radio" name="gender" value="other" id="radio-other"/>
+          <label for="radio-other">
+            Other
+          </label>
+      </div>
+
+      <label class="input-group">
+        <span class="input-label">Phone: </span>
+        <div class="input-phone">
+          <input type="text" disabled class="input prefix-input" placeholder="prefix" value="+62" />
+          <input type="number" class="input" name="phone" placeholder="phone" />
+        </div>
+      </label>
+      
+      <label class="input-group">
+        <span class="input-label">Address: </span>
+        <textarea class="input" name="address"></textarea>
+      </label>
+      
+      <label class="input-group">
+        <span class="input-label">Email: </span>
+        <input type="email" class="input" placeholder="email" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Password: </span>
+        <input type="password" name="password" class="input" placeholder="password" />
+      </label>
+
+      <label class="input-group">
+        <span class="input-label">Re-type password: </span>
+        <input type="password" name="password-verification" class="input" placeholder="repeat password" />
+      </label>
+
+      <button type="button" class="btn" id="btn_submit" >Submit</button>
+    </form>
+  </div>
+</body>
+</html>
