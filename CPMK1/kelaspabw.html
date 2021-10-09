@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelas PABW</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="title">Kelas PABW</h1>
+      </header>
+      <aside>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#kelas">Daftar Kelas</a></li>
+            <li><a href="#mahasiswa">Daftar Mahasiswa</a></li>
+            <li><a href="#akun">Ubah Akun</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <main>
+        <article>
+          <h3>
+            Ini merupakan website resmi dari mata kuliah Pengembangan Aplikasi
+            Berbasis Web
+          </h3>
+
+          <div class="information">
+            <div>
+              <p>
+                Syarat unutk login ke sistem adalah dengan registrasi dengan
+                melampirkan
+              </p>
+              <ul>
+                <li>Scan KTM</li>
+                <li>Scan KTP</li>
+                <li>Fungsi Diri 4R</li>
+              </ul>
+
+              <form class="form" action="#" method="post">
+                <span class="form-title">Registrasi Data Diri</span>
+                <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" />
+
+                  <label for="password">Password</label>
+                  <input type="password" id="password" />
+
+                  <label for="password-confirm">Konfirmasi password</label>
+                  <input type="password" id="password-confirm" />
+
+                  <span for="password-confirm">jenis Kelamin</span>
+                  <div>
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="laki"
+                      id="laki"
+                      checked
+                    />
+                    <label for="laki">Laki-Laki</label>
+                    <br />
+
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="perempuan"
+                      id="perempuan"
+                    />
+                    <label for="perempuan">Perempuan</label>
+                  </div>
+
+                  <label for="jurusan">Jurusan</label>
+                  <select type="text" id="jurusan">
+                    <option value="tekim">Teknik Kimia</option>
+                    <option value="tekin">Teknik Industri</option>
+                    <option value="infor">Informatika</option>
+                    <option value="tekel">Teknik Elektro</option>
+                    <option value="tekme">Teknik Mesin</option>
+                  </select>
+
+                  <label for="fakultas">Fakultas</label>
+                  <input type="text" id="fakultas" value="FTI" disabled />
+
+                  <label for="descropsi">Deskripsi Diri</label>
+                  <textarea type="text" id="descropsi"></textarea>
+
+                  <span></span>
+                  <button type="submit">Registrasi</button>
+                </div>
+              </form>
+            </div>
+            <div>
+              <img
+                class="logo"
+                src="./UII - Kuning.png"
+                alt="Logo UII Kuning"
+              />
+            </div>
+          </div>
+        </article>
+      </main>
+      <footer>
+        <span> Copyright &copy; PABW </span>
+        <a href="#pabw"> PABW2021@UII</a>
+      </footer>
+    </div>
+  </body>
+</html>
