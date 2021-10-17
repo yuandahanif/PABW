@@ -1,0 +1,33 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5em;
+  height: 38em;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-image: url("https://webusstatic.yo-star.com/ark_us_web/pc/img/bg.6cd7a627.png");
+}
+
+.slog-1 {
+  height: 1.8em;
+  width: auto;
+  margin-bottom: 8em;
+}
+
+.logo-1 {
+  height: 12em;
+  width: auto;
+}
+
+.profile__img {
+  margin-top: -22em;
+}
