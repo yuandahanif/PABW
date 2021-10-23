@@ -43,8 +43,8 @@ main {
   gap: 1em;
   grid-template-areas:
     "header"
-    "aside"
-    "main";
+    "main"
+    "aside";
 }
 
 .header {
@@ -89,5 +89,15 @@ footer {
     grid-template-areas:
       "header header header aside"
       "main main main aside";
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  main {
+    min-width: 960px;
+    grid-template-rows: max-content auto;
+    grid-template-columns: auto 1fr auto;
+    gap: 1em;
+    grid-template-areas: "header main aside";
   }
 }
