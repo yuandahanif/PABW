@@ -10,22 +10,24 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1 class="title">Ujian PABW</h1>
+        <h1>Ujian PABW</h1>
         <p>Yuanda Hanif hisyam | 20523134 | Kelas E</p>
       </header>
       <main>
         <div class="header">
           <nav>
-            <a href="#" class="nav-link">Home</a>
+            <a href="#" id="link-home" class="nav-link">Home</a>
             <a href="#" class="nav-link">Profil</a>
-            <a href="#" class="nav-link">Logout</a>
+            <a href="#" id="link-profile" class="nav-link">Logout</a>
           </nav>
         </div>
+
         <div class="container">
-          <h1>Lorem Ipsum</h1>
+          <h1 class="title">Lorem Ipsum</h1>
           <img
+            class="image"
             src="https://informatics.uii.ac.id/wp-content/uploads/2021/09/Photo-by-Phillip-Glickman-on-Unsplash-1030x412.jpg"
-            alt="rorobott"
+            alt="gambar robot"
           />
           <div>
             <p>
@@ -44,12 +46,33 @@
             </p>
           </div>
         </div>
-        <aside># Regis</aside>
+
+        <aside>
+          <form action="" id="form">
+            <span>Login/Register</span>
+            <label>
+              Username:
+              <input type="text" name="username" />
+            </label>
+            <label>
+              Password:
+              <input type="password" name="password" />
+            </label>
+            <button type="submit">Login</button>
+
+            <span id="form_status">
+
+            </span>
+          </form>
+        </aside>
       </main>
       <footer>
-        <span> Copyright &copy; 2021 PABW </span>
-        <a href="#pabw"> PABW2021@UII</a>
+        <span id="footer-unhover">
+          Copyright &copy; 2021 | 20523134@students.uii.ac.id
+        </span>
+        <span id="footer-hover">Konten ini dibuat untuk ujian Javascript </span>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

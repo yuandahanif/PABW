@@ -35,34 +35,67 @@ main {
 }
 
 .header {
-  padding: 1em;
   grid-area: header;
-  background-color: red;
+}
+
+nav {
+  background-color: rgba(172, 255, 47, 0.329);
+  padding: 0.5em;
 }
 
 .nav-link {
   display: inline-block;
   text-align: center;
-  padding: 0.2em;
   padding: 0.5em;
   background-color: green;
   width: 100%;
-  margin-bottom: 2em;
+  margin-bottom: 0.2em;
 }
 
 .container {
   grid-area: main;
-  background-color: salmon;
-  /* width: 60%; */
-  /* margin-right: 2em; */
+  background-color: white;
   padding: 1em;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.container p {
+  font-size: 1.1em;
 }
 
 aside {
   grid-area: aside;
-  /* width: 15%; */
-  padding: 1em;
+}
+
+#form {
   background-color: aquamarine;
+  padding: 0.8em;
+}
+
+#form span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#form #form_status {
+  font-size: 1em;
+  font-weight: normal;
 }
 
 footer {
@@ -77,6 +110,10 @@ footer {
   font-size: 14px;
 }
 
+#footer-hover {
+  display: none;
+}
+
 @media only screen and (min-width: 460px) {
   main {
     width: 80%;
@@ -87,14 +124,24 @@ footer {
       "header header header aside"
       "main main main aside";
   }
+
+  .nav-link {
+    display: inline-block;
+    min-width: 10em;
+  }
 }
 
 @media only screen and (min-width: 960px) {
   main {
     min-width: 960px;
-    grid-template-rows: max-content auto;
+    grid-template-rows: min-content;
     grid-template-columns: auto 1fr auto;
     gap: 1em;
     grid-template-areas: "header main aside";
+  }
+
+  .nav-link {
+    display: block;
+    min-width: 10em;
   }
 }
