@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: rgba(211, 211, 211, 0.459);
+}
+
+header {
+  margin-bottom: 2em;
+  padding: 1em 0;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  justify-content: center;
+  flex-grow: 1;
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  grid-template-rows: max-content auto;
+  grid-template-columns: 1fr auto;
+  gap: 1em;
+  grid-template-areas:
+    "header"
+    "main"
+    "aside";
+}
+
+.header {
+  grid-area: header;
+}
+
+nav {
+  background-color: rgba(172, 255, 47, 0.329);
+  padding: 0.5em;
+}
+
+.nav-link {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em;
+  background-color: green;
+  width: 100%;
+  margin-bottom: 0.2em;
+}
+
+.container {
+  grid-area: main;
+  background-color: white;
+  padding: 1em;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.container p {
+  font-size: 1.1em;
+}
+
+aside {
+  grid-area: aside;
+}
+
+#form {
+  background-color: aquamarine;
+  padding: 0.8em;
+}
+
+#form span {
+  display: block;
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+#form #form_status {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+footer {
+  border-top: 1px solid #000;
+  grid-area: footer;
+  display: flex;
+  padding: 1.5em 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0e5cc;
+  font-size: 14px;
+}
+
+#footer-hover {
+  display: none;
+}
+
+@media only screen and (min-width: 460px) {
+  main {
+    width: 80%;
+    grid-template-rows: max-content auto;
+    grid-template-columns: 1fr auto;
+    gap: 1em;
+    grid-template-areas:
+      "header header header aside"
+      "main main main aside";
+  }
+
+  .nav-link {
+    display: inline-block;
+    min-width: 10em;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  main {
+    min-width: 960px;
+    grid-template-rows: min-content;
+    grid-template-columns: auto 1fr auto;
+    gap: 1em;
+    grid-template-areas: "header main aside";
+  }
+
+  .nav-link {
+    display: block;
+    min-width: 10em;
+  }
+}
