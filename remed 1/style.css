@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.table {
+  height: 600px;
+  width: 1000px;
+}
+
+#kepala {
+  background-color: cadetblue;
+  text-align: center;
+  font-weight: bold;
+}
+
+#leher {
+  height: 50px;
+  background-color: #e3e3a1;
+}
+
+#badankiri {
+  width: 65%;
+  background-color: #ffffff;
+}
+
+#badankanan {
+  width: 35%;
+  background-color: #cedfeb;
+}
+#kaki {
+  text-align: center;
+  font-style: italic;
+  background-color: #638dcf;
+}
+
+#leher li {
+  float: left;
+  margin: 0 5px;
+}
+
+label {
+  display: block;
+  margin: 5px 0;
+}
