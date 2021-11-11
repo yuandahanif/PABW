@@ -31,7 +31,8 @@ main {
   grid-template-areas:
     "header"
     "main"
-    "aside";
+    "aside"
+    "aside-2";
 }
 
 .header {
@@ -72,8 +73,27 @@ nav {
   font-size: 1.1em;
 }
 
-aside {
+#aside-form {
   grid-area: aside;
+}
+
+#aside-bawah-form {
+  grid-area: aside-2;
+}
+
+#aside-bawah-form div {
+  padding: 1em;
+  margin-bottom: .2em;
+}
+
+.warna-1 {
+  background-color: red;
+}
+.warna-2 {
+  background-color: yellow;
+}
+.warna-3 {
+  background-color: blue;
 }
 
 #form {
@@ -114,15 +134,20 @@ footer {
   display: none;
 }
 
-@media only screen and (min-width: 460px) {
+@media only screen and (min-width: 600px) {
   main {
     width: 80%;
-    grid-template-rows: max-content auto;
+    grid-template-rows: auto auto auto;
     grid-template-columns: 1fr auto;
     gap: 1em;
     grid-template-areas:
-      "header header header aside"
-      "main main main aside";
+      "main header"
+      "main aside"
+      "main aside-2";
+  }
+
+  nav {
+    display: flex;
   }
 
   .nav-link {
@@ -131,13 +156,19 @@ footer {
   }
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (min-width: 1000px) {
   main {
     min-width: 960px;
-    grid-template-rows: min-content;
+    grid-template-rows: min-content max-content;
     grid-template-columns: auto 1fr auto;
     gap: 1em;
-    grid-template-areas: "header main aside";
+    grid-template-areas:
+      "header main aside"
+      ". main aside-2";
+  }
+
+  nav {
+    display: block;
   }
 
   .nav-link {
