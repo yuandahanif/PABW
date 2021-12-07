@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAAAAAAAAAAAAa</title>
+  </head>
+  <body>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+
+    <script>
+      myObj = {
+        nama: "Ronaldo",
+        age: 20,
+        tim: "Real Madrid",
+      };
+
+      document.querySelector("#demo1").innerHTML = myObj.tim + "<br/>";
+
+      for (x in myObj) {
+        document.querySelector("#demo2").innerHTML += myObj[x] + "<br/>";
+      }
+    </script>
+  </body>
+</html>
